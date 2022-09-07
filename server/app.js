@@ -2,6 +2,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//axios
+var axios = require('axios');
 
 //Dotenv
 require('dotenv').config();
