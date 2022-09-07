@@ -48,15 +48,6 @@ afterEach(async () => {
     })
 
 
-    //Execute the cronjob function
-    describe('GET /pollution/cronjob', () => {
-        it('should get pollution data and save it to DB', async () => {
-            const response = await chai.request(server).get('/pollution/cronjob');
-            response.should.have.status(200);
-        })
-    })
-
-
     //GET /pollution/all - get pollution data from database
     describe('GET /pollution/all', () => {
         it('should get all pollution', async () => {
@@ -81,15 +72,18 @@ afterEach(async () => {
     }
     )
 
-    //test cron job
-    describe('GET /pollution/cronjob', () => {
+    //Testing the cron job
+    describe('GET /pollution/all', () => {
         it('should get pollution data and save it to DB', async () => {
-            //wait 1 minute
-            await new Promise(resolve => setTimeout(resolve, 60000));
             const response = await chai.request(server).get('/pollution/all');
-            //check if the data is saved in the database
-            response.body.length.should.be.eql(1);
+            //wait 1 minute before check status
+            setTimeout(() => {
+                response.should.have.status(200);
+            }
+            , 60000);
+            
         })
-    }
+
+    })
 
 });

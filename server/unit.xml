@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.5960" tests="3" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-09-07T17:27:48" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="2.4640" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-07T19:39:09" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Pollution_api" timestamp="2022-09-07T17:27:48" tests="0" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="0.0000" failures="0">
+  <testsuite name="Pollution_api" timestamp="2022-09-07T19:39:09" tests="0" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="GET /pollution" timestamp="2022-09-07T17:27:48" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="1.4060" failures="0">
-    <testcase name="Pollution_api GET /pollution should get pollution data and save it to DB" time="1.4060" classname="should get pollution data and save it to DB">
+  <testsuite name="GET /pollution" timestamp="2022-09-07T19:39:09" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="1.2460" failures="0">
+    <testcase name="Pollution_api GET /pollution should get pollution data and save it to DB" time="1.2460" classname="should get pollution data and save it to DB">
     </testcase>
   </testsuite>
-  <testsuite name="GET /pollution/all" timestamp="2022-09-07T17:27:50" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="0.0170" failures="0">
-    <testcase name="Pollution_api GET /pollution/all should get all pollution" time="0.0170" classname="should get all pollution">
+  <testsuite name="GET /pollution/all" timestamp="2022-09-07T19:39:10" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="0.0140" failures="0">
+    <testcase name="Pollution_api GET /pollution/all should get all pollution" time="0.0140" classname="should get all pollution">
     </testcase>
   </testsuite>
-  <testsuite name="GET /pollution/" timestamp="2022-09-07T17:27:50" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="1.1730" failures="0">
-    <testcase name="Pollution_api GET /pollution/ should get pollution by longitude and latitude" time="1.1730" classname="should get pollution by longitude and latitude">
+  <testsuite name="GET /pollution/" timestamp="2022-09-07T19:39:10" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="1.1910" failures="0">
+    <testcase name="Pollution_api GET /pollution/ should get pollution by longitude and latitude" time="1.1910" classname="should get pollution by longitude and latitude">
+    </testcase>
+  </testsuite>
+  <testsuite name="GET /pollution/all" timestamp="2022-09-07T19:39:12" tests="1" file="/Users/ajarouih/Desktop/codes/node-senior/server/test/index.spec.js" time="0.0130" failures="0">
+    <testcase name="Pollution_api GET /pollution/all should get pollution data and save it to DB" time="0.0130" classname="should get pollution data and save it to DB">
     </testcase>
   </testsuite>
 </testsuites>
