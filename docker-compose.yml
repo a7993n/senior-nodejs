@@ -1,0 +1,20 @@
+
+
+version: '3'
+services:
+  server:
+    image: node:12.4.0-alpine
+    container_name: senior-server
+    working_dir: /server
+    volumes:
+    - ./server:/server
+    - /server/.env:./server/.env
+    command: npm run dev
+    ports:
+    - "4000:4000"
+    networks:
+    - aymen
+networks:
+  aymen:
+    driver: bridge
+
