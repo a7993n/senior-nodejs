@@ -6,5 +6,4 @@ router.get('/pollution/', controller.byLongLat);
 //get /pollution/all/ - get pollution data from database
 router.get('/pollution/all/', controller.getPollution);
 
-
 module.exports = router;

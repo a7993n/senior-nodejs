@@ -48,6 +48,14 @@ afterEach(async () => {
     })
 
 
+    //Execute the cronjob function
+    describe('GET /pollution/cronjob', () => {
+        it('should get pollution data and save it to DB', async () => {
+            const response = await chai.request(server).get('/pollution/cronjob');
+            response.should.have.status(200);
+        })
+    })
+
 
     //GET /pollution/all - get pollution data from database
     describe('GET /pollution/all', () => {
