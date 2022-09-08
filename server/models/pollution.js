@@ -2,7 +2,7 @@ const {Sequelize, DataTypes} = require("sequelize");
 const sequelize = new Sequelize("sqlite::memory:");
 
 
-// Notre model de données pour les employés
+// Notre model de données pour la pollution d'air
 const Pollution = sequelize.define("Pollution", {
     id: {
         type: DataTypes.INTEGER,
